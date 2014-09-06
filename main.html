@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+{% autoescape true %}
+<html>
+	<head>
+		<style>
+			body 
+			{
+			    background: url('images/bg.jpg') no-repeat scroll;
+            	background-size: 100% 100%;
+            	min-height: 700px;
+            	background-color: #000;
+			}
+			
+			.bigfont
+			{
+				font-size: 32px;
+				color: #fff;
+				font-weight: bold;
+				font-family: Verdana;
+			}
+
+			.mediumfont
+			{
+				font-size: 20px;
+				color: #eee;
+				font-weight: bold;
+				font-family: Verdana;
+			}
+
+			.mediumfont2
+			{
+				font-size: 16px;
+				color: #eee;
+				font-weight: bold;
+				font-family: Verdana;
+			}
+			
+		</style>
+	</head>
+  <body>
+    <div>
+    	<table style="width:100%">
+    		<tr>
+    			<td style="width:50%">
+    				<div>
+    					<br/>
+    					<br/>
+    					<br/>
+    					<br/>
+    					<br/>
+    					<div class="bigfont" style="text-align: center;">Anonymous Email
+    					</div>
+    					<div class="mediumfont" style="text-align: center;">Send and recieve anonymous Emails</div>
+    				</div>
+    			</td>
+    			
+    			<td style="width:50%">
+    				<div>
+    					<div><span class="mediumfont2">To</span></div>
+    					<div><span style="border-color: #888;"><input id="to" type="text" style="background-color: transparent; color:#fff;border-color:#888; width: 320px;"/></span></div>
+    					<br/>
+    					<div><span class="mediumfont2">From</span></div>
+    					<div><span style="border-color: #888;"><input id="from" type="text" style="background-color: transparent; color:#fff;border-color:#888; width: 320px;"/></span></div>
+    					<br/>
+    					<div><span class="mediumfont2">Message</span></div>
+    					<div><span style="border-color: #888;"><textarea id="from" type="text" style="background-color: transparent; color:#fff;border-color:#888; width: 320px;" rows="10"></textarea></span></div>
+    					<br/>
+    					<input type="button" value="Send"/>
+    				</div>
+    			</td>
+    		</tr>
+    	</table>
+    </div>
+  </body>
+</html>
+{% endautoescape %}
