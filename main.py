@@ -27,6 +27,22 @@ class MainPage(webapp2.RequestHandler):
         # self.response.headers['Content-Type'] = 'text/html'
         self.response.write(template.render(template_values))
 
+class TermsPage(webapp2.RequestHandler):
+    def get(self):
+        
+        terms = 'Terms and  Conditions goes here'
+        template_values = {
+            'terms': terms
+        }
+
+        template = JINJA_ENVIRONMENT.get_template('terms.html')
+        # self.response.headers['Content-Type'] = 'text/html'
+        self.response.write(template.render(template_values))
+
+
 app = webapp2.WSGIApplication([
     ('/', MainPage),
+     ('/terms', TermsPage),
 ], debug=True)
+
+
