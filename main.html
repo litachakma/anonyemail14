@@ -34,6 +34,14 @@
 				font-weight: bold;
 				font-family: Verdana;
 			}
+
+			.smallfont
+			{
+				font-size: 14px;
+				color: #A9A9A9;
+				font-weight: bold;
+				font-family: Calibri;
+			}
 			
 		</style>
 	</head>
@@ -63,8 +71,15 @@
     					<div><span style="border-color: #888;"><input id="from" type="text" style="background-color: transparent; color:#fff;border-color:#888; width: 320px;"/></span></div>
     					<br/>
     					<div><span class="mediumfont2">Message</span></div>
-    					<div><span style="border-color: #888;"><textarea id="from" type="text" style="background-color: transparent; color:#fff;border-color:#888; width: 320px;" rows="10"></textarea></span></div>
+    					<div><span style="border-color: #888;"><textarea id="message" type="text" style="background-color: transparent; color:#fff;border-color:#888; width: 320px;" rows="10"></textarea></span></div>
     					<br/>
+    					<div>
+    					<span style="border-color: #888;">
+    					<input type="checkbox" name="terms" value="terms" id="terms">
+  						<label for="terms" class="smallfont">I have read and agreed with all terms and conditions</label>
+  						</span>
+  						</div>
+  						<br/>
     					<input type="button" value="Send"/>
     				</div>
     			</td>
