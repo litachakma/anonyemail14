@@ -12,6 +12,10 @@ handlers:
 - url: /images
   static_dir: images
 
+- url: /_ah/mail/.+
+  script: main.mailer
+  login: admin
+
 - url: .*
   script: main.app
 
@@ -20,3 +24,6 @@ libraries:
   version: latest
 - name: jinja2
   version: latest
+
+inbound_services:
+- mail

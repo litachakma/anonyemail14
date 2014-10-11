@@ -64,14 +64,18 @@
     			
     			<td style="width:50%">
     				<div>
+    					<form action="/sendmail" method="post">
     					<div><span class="mediumfont2">To</span></div>
-    					<div><span style="border-color: #888;"><input id="to" type="text" style="background-color: transparent; color:#fff;border-color:#888; width: 320px;"/></span></div>
+    					<div><span style="border-color: #888;"><input id="to" name="to" type="text" style="background-color: transparent; color:#fff;border-color:#888; width: 320px;"/></span></div>
     					<br/>
     					<div><span class="mediumfont2">From</span></div>
-    					<div><span style="border-color: #888;"><input id="from" type="text" style="background-color: transparent; color:#fff;border-color:#888; width: 320px;"/></span></div>
+    					<div><span style="border-color: #888;"><input id="from" name="from" type="text" style="background-color: transparent; color:#fff;border-color:#888; width: 320px;"/></span></div>
+    					<br/>
+    					<div><span class="mediumfont2">Subject</span></div>
+    					<div><span style="border-color: #888;"><input id="subject" name="subject" type="text" style="background-color: transparent; color:#fff;border-color:#888; width: 320px;"/></span></div>
     					<br/>
     					<div><span class="mediumfont2">Message</span></div>
-    					<div><span style="border-color: #888;"><textarea id="message" type="text" style="background-color: transparent; color:#fff;border-color:#888; width: 320px;" rows="10"></textarea></span></div>
+    					<div><span style="border-color: #888;"><textarea id="message" name="message" type="text" style="background-color: transparent; color:#fff;border-color:#888; width: 320px;" rows="10"></textarea></span></div>
     					<br/>
     					<div>
     					<span style="border-color: #888;">
@@ -80,7 +84,8 @@
   						</span>
   						</div>
   						<br/>
-    					<input type="button" value="Send"/>
+    					<input type="submit" value="Send"/>
+    					</form>
     				</div>
     			</td>
     		</tr>
